@@ -30,6 +30,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 88vh;
+  text-align: center;
+  color: #f2f2f2;
 }
 
 .bg--primary {
