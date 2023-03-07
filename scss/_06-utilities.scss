@@ -3,6 +3,7 @@ $colors: (
     "dark" : $clr-black,
     "light" : $clr-white,
     "gray" : $clr-gray,
+    "lighter" : $clr-light,
 );
 
 @each $key, $val in $colors {
@@ -15,6 +16,9 @@ $colors: (
         &--#{$key} {
         color: $val;
         }
+    }
+    .btn.bg--#{$key} {
+      @include btn($val);
     }
 }
 
