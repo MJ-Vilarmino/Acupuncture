@@ -136,9 +136,23 @@ a {
     grid-gap: 2rem;
   }
 }
+.testimonials .tns-nav {
+  margin-top: 4rem;
+}
+.testimonials .tns-nav button {
+  background-color: rgb(200, 185, 185);
+  height: 1rem;
+  width: 1rem;
+  border: none;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+}
+.testimonials .tns-nav .tns-nav-active {
+  background-color: gray;
+}
 .testimonials hr {
-  width: 30%;
-  height: 2px;
+  width: 25%;
+  height: 1px;
   margin: 1.5rem auto;
 }
 

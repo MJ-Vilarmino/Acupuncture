@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./dist/css/main.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
     
@@ -58,10 +59,7 @@
                     <p>Pulse Diagnosis is considered the gold standard for understanding the root cause of your ailments.</p>
                     
                 </div>
-
-
             </div>
-
         </div>
     </section>
 
@@ -109,7 +107,65 @@
 
     <section class="testimonials text--center">
         <div class="container">
-            <div class="testimonials__wrapper">
+            <div class="my-slider">
+                <div class="testimonials__type">
+                    <img class="mb--1" src="./img/Quote Icon.jpg" alt="">
+                    <h2 class="text--gray">Andrea G.</h2>
+                    <h3 class="text--primary">Poulsbo, Washington</h3>
+                    <hr class="bg--primary">
+                    <p>
+                        I have been coming here since October 2014. We have been working on tension in my neck and stress management. A couple appointment ago I mentioned my lock jaw issue. Bob and Emily nailed it! In two, yes two treatments my jaw was released! Miracles do happen. For years I have struggled with this. Amen! I am so happy I just want to cry. I will settle for telling the world how excited I am. Thank you!
+                    </p>
+                </div>
+
+                <div class="testimonials__type">
+                    <img class="mb--1" src="./img/Quote Icon.jpg" alt="">
+                    <h2 class="text--gray">Christie A.</h2>
+                    <h3 class="text--primary">Kenmore, Washington</h3>
+                    <hr class="bg--primary">
+                    <p>
+                        I had amazing results with herbs and diet program. I dropped 22 lbs easily and my anxiety levels went down and other health issues. Bob’s technique of pulse reading is accurate and life saving. I am totally satisfied and pleased with my results.
+                    </p>
+                </div>
+
+                <div class="testimonials__type">
+                    <img class="mb--1" src="./img/Quote Icon.jpg" alt="">
+                    <h2 class="text--gray">Penny M.</h2>
+                    <h3 class="text--primary">Poulsbo, Washington</h3>
+                    <hr class="bg--primary">
+                    <p>
+                        Bob saved my life, simply put.  About a year ago I went to his acupuncture and wellness clinic in very poor health. I was so Ill I was actually in the process of having my will made out. Since my first visit I have lost over 70 lbs, my heart murmur is gone and the diagnosis of congestive heart failure is no longer on my records. Needless to say this is  “The Best Care Ever Received” anywhere in my long life.</p>
+                </div>
+
+                <div class="testimonials__type">
+                    <img class="mb--1" src="./img/Quote Icon.jpg" alt="">
+                    <h2 class="text--gray">Andrea G.</h2>
+                    <h3 class="text--primary">Poulsbo, Washington</h3>
+                    <hr class="bg--primary">
+                    <p>
+                        I have been coming here since October 2014. We have been working on tension in my neck and stress management. A couple appointment ago I mentioned my lock jaw issue. Bob and Emily nailed it! In two, yes two treatments my jaw was released! Miracles do happen. For years I have struggled with this. Amen! I am so happy I just want to cry. I will settle for telling the world how excited I am. Thank you!
+                    </p>
+                </div>
+
+                <div class="testimonials__type">
+                    <img class="mb--1" src="./img/Quote Icon.jpg" alt="">
+                    <h2 class="text--gray">Christie A.</h2>
+                    <h3 class="text--primary">Kenmore, Washington</h3>
+                    <hr class="bg--primary">
+                    <p>
+                        I had amazing results with herbs and diet program. I dropped 22 lbs easily and my anxiety levels went down and other health issues. Bob’s technique of pulse reading is accurate and life saving. I am totally satisfied and pleased with my results.
+                    </p>
+                </div>
+
+                <div class="testimonials__type">
+                    <img class="mb--1" src="./img/Quote Icon.jpg" alt="">
+                    <h2 class="text--gray">Penny M.</h2>
+                    <h3 class="text--primary">Poulsbo, Washington</h3>
+                    <hr class="bg--primary">
+                    <p>
+                        Bob saved my life, simply put.  About a year ago I went to his acupuncture and wellness clinic in very poor health. I was so Ill I was actually in the process of having my will made out. Since my first visit I have lost over 70 lbs, my heart murmur is gone and the diagnosis of congestive heart failure is no longer on my records. Needless to say this is  “The Best Care Ever Received” anywhere in my long life.</p>
+                </div>
+
                 <div class="testimonials__type">
                     <img class="mb--1" src="./img/Quote Icon.jpg" alt="">
                     <h2 class="text--gray">Andrea G.</h2>
@@ -141,6 +197,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="askedQuestions bg--lighter border-bottom-primary">
         <div class="container">
@@ -229,6 +286,33 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+    <script type="module">
+        var slider = tns({
+          container: '.my-slider',
+          items: 1,
+          slideBy: 'page',
+          autoplay: false,
+          controls: false,
+          navPosition: "bottom",
+          responsive: {
+            320: {
+                edgePadding: 20,
+                gutter: 20,
+                items: 1
+            },
+            760: {
+                gutter: 30,
+                items: 2
+            },
+            900: {
+                items: 3
+            }
+            }
+        });
+    </script>
 
 </body>
 </html>
